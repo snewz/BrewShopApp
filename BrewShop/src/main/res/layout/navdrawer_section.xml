@@ -7,7 +7,7 @@
         android:id="@+id/navmenusection_label"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Section"
+        android:text="@string/section"
         android:textSize="20sp"
         android:padding="5dp"
         android:textColor="@color/text_light_primary"/>

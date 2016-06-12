@@ -18,7 +18,7 @@
         android:layout_toRightOf="@id/ingredient_icon"
         android:gravity="center_vertical"
         android:textColor="@color/text_dark_primary"
-        android:text="Add Ingredient"
+        android:text="@string/add_ingredient"
         android:textSize="20sp" />
 
 </RelativeLayout>

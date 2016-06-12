@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:gravity="center_vertical"
-                android:text="2 oz."
+                android:text="@string/_2_oz"
                 android:textColor="@color/text_dark_primary"
                 android:textSize="18sp" />
 
@@ -39,7 +39,7 @@
                 android:ellipsize="end"
                 android:gravity="center_vertical"
                 android:singleLine="true"
-                android:text="Hops"
+                android:text="@string/hops"
                 android:textColor="@color/text_dark_primary"
                 android:textSize="18sp" />
 
@@ -53,13 +53,13 @@
                 style="@style/IngredientDetails"
                 android:id="@+id/details"
                 android:layout_alignParentLeft="true"
-                android:text="4.2% Alpha"/>
+                android:text="@string/_4_2_alpha"/>
 
             <TextView
                 style="@style/IngredientDetails"
                 android:id="@+id/ibu"
                 android:layout_toRightOf="@id/details"
-                android:text="10 IBU"/>
+                android:text="@string/_10_ibu"/>
 
             <ImageView
                 android:layout_alignParentRight="true"
@@ -71,7 +71,7 @@
                 android:id="@+id/inventory_message"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="5dp"
-                android:text="(X.X oz.)"
+                android:text="@string/x_x_oz"
                 android:textColor="@color/text_red"/>
 
         </RelativeLayout>

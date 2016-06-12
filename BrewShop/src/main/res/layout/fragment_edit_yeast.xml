@@ -13,14 +13,14 @@
             android:layout_height="wrap_content">
 
         <TextView style="@style/CardTitle"
-            android:text="Yeast"
+            android:text="@string/yeast"
             android:id="@+id/yeast_addition_title"/>
 
         <TextView
             android:id="@+id/showing_inventory_only"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Inventory Only"
+            android:text="@string/inventory_only"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:textColor="@color/text_dark_secondary"
@@ -45,7 +45,7 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Yeast Type" />
+                    android:text="@string/yeast_type" />
 
                 <Spinner style="@style/MySpinner"
                     android:id="@+id/yeast_type"/>
@@ -59,13 +59,13 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Name" />
+                    android:text="@string/name" />
 
                 <EditText
                     android:id="@+id/custom_name"
                     style="@style/RecipeEditValue"
                     android:layout_width="fill_parent"
-                    android:hint="Yeast name"
+                    android:hint="@string/yeast_name"
                     android:gravity="start|bottom"
                     android:inputType="textCapWords|textNoSuggestions"
                     android:maxLength="32">
@@ -82,7 +82,7 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Quantity" />
+                    android:text="@string/quantity" />
 
                 <EditText style="@style/RecipeEditValue"
                     android:id="@+id/yeast_quantity"
@@ -93,7 +93,7 @@
 
                 <TextView
                     style="@style/RecipeEditUnit"
-                    android:text="packs" />
+                    android:text="@string/packs" />
 
             </LinearLayout>
 
@@ -104,7 +104,7 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Attenuation" />
+                    android:text="@string/attenuation" />
 
                 <EditText style="@style/RecipeEditValue"
                     android:id="@+id/yeast_attenuation"
@@ -129,7 +129,7 @@
         android:orientation="vertical">
 
         <TextView style="@style/CardTitle"
-            android:text="Description"/>
+            android:text="@string/description"/>
 
         <android.support.v7.widget.CardView style="@style/Card">
 
@@ -142,7 +142,7 @@
                 android:padding="5dp"
                 android:singleLine="false"
                 android:gravity="center_vertical"
-                android:text="Description"
+                android:text="@string/description"
                 android:textSize="14sp"/>
 
         </android.support.v7.widget.CardView>

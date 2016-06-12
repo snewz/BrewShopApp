@@ -12,7 +12,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="The Brew Shop"
+        android:contentDescription="@string/the_brew_shop"
         android:adjustViewBounds="true"
         android:maxWidth="450dp"
         android:scaleType="fitXY"
@@ -21,7 +21,6 @@
     <View
         android:layout_width="fill_parent"
         android:layout_height="5dp"
-        android:layout_alignParentTop="true"
         android:background="@drawable/drawer_shadow_down" />
 
     <android.support.v7.widget.CardView

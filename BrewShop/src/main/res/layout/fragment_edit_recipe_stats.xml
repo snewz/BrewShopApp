@@ -9,7 +9,7 @@
         android:orientation="vertical">
 
     <TextView style="@style/CardTitle"
-        android:text="Recipe Information"/>
+        android:text="@string/recipe_information"/>
 
         <android.support.v7.widget.CardView style="@style/Card">
 
@@ -26,13 +26,13 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Recipe Name" />
+                    android:text="@string/recipe_name" />
 
                 <EditText
                     android:id="@+id/recipe_name"
                     style="@style/RecipeEditValue"
                     android:layout_width="fill_parent"
-                    android:hint="Enter name"
+                    android:hint="@string/enter_name"
                     android:gravity="start|bottom"
                     android:inputType="textCapWords|textNoSuggestions"
                     android:maxLength="50">
@@ -47,12 +47,12 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Batch Volume" />
+                    android:text="@string/batch_volume" />
 
                 <EditText
                     android:id="@+id/batch_volume"
                     style="@style/RecipeEditValue"
-                    android:hint="Volume"
+                    android:hint="@string/volume"
                     android:inputType="numberDecimal" />
 
                 <TextView
@@ -69,12 +69,12 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Boil Volume" />
+                    android:text="@string/boil_volume" />
 
                 <EditText
                     android:id="@+id/boil_volume"
                     style="@style/RecipeEditValue"
-                    android:hint="Volume"
+                    android:hint="@string/volume"
                     android:inputType="numberDecimal" />
 
                 <TextView
@@ -91,17 +91,17 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Boil Time" />
+                    android:text="@string/boil_time" />
 
                 <EditText
                     android:id="@+id/boil_time"
                     style="@style/RecipeEditValue"
-                    android:hint="Time"
+                    android:hint="@string/time"
                     android:inputType="number" />
 
                 <TextView
                     style="@style/RecipeEditUnit"
-                    android:text="min" />
+                    android:text="@string/min" />
 
             </LinearLayout>
 
@@ -112,12 +112,12 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Efficiency" />
+                    android:text="@string/efficiency" />
 
                 <EditText
                     android:id="@+id/efficiency"
                     style="@style/RecipeEditValue"
-                    android:hint="Percent"
+                    android:hint="@string/percent"
                     android:inputType="numberDecimal" />
 
                 <TextView
@@ -133,7 +133,7 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="BJCP Style" />
+                    android:text="@string/bjcp_style" />
 
                 <Spinner style="@style/MySpinner"
                     android:id="@+id/recipe_style"
@@ -149,7 +149,7 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Substyle" />
+                    android:text="@string/substyle" />
 
                 <Spinner style="@style/MySpinner"
                     android:id="@+id/recipe_substyle"
@@ -167,7 +167,7 @@
             android:orientation="vertical">
 
             <TextView style="@style/CardTitle"
-                android:text="Style Guidelines"/>
+                android:text="@string/style_guidelines"/>
 
             <android.support.v7.widget.CardView style="@style/Card">
 
@@ -180,7 +180,7 @@
                     android:singleLine="false"
                     android:gravity="center_vertical"
                     android:textColor="@color/text_dark_primary"
-                    android:text="Description"
+                    android:text="@string/description"
                     android:textSize="14sp"/>
 
             </android.support.v7.widget.CardView >

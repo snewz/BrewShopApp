@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:textColor="@color/text_dark_primary"
-                android:text="1 Pkg."
+                android:text="@string/_1_pkg"
                 android:textSize="18sp" />
 
             <TextView
@@ -37,7 +37,7 @@
                 android:ellipsize="end"
                 android:gravity="center_vertical"
                 android:textColor="@color/text_dark_primary"
-                android:text="Yeast"
+                android:text="@string/yeast"
                 android:textSize="18sp" />
 
         </LinearLayout>
@@ -50,7 +50,7 @@
                 android:id="@+id/attenuation"
                 style="@style/IngredientDetails"
                 android:layout_alignParentLeft="true"
-                android:text="~80% Attenuation"/>
+                android:text="@string/_80_attenuation"/>
 
             <ImageView
                 android:id="@+id/check"
@@ -62,7 +62,7 @@
                 style="@style/IngredientDetails"
                 android:layout_marginRight="5dp"
                 android:layout_alignParentRight="true"
-                android:text="(X Pkg.)"
+                android:text="@string/x_pkg"
                 android:textColor="@color/text_red"/>
 
         </RelativeLayout>

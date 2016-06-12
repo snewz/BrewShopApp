@@ -26,7 +26,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center_vertical"
-                        android:contentDescription="Recipe icon"
+                        android:contentDescription="@string/recipe_icon"
                         android:background="@color/color_primary_light" />
 
                     <LinearLayout
@@ -40,14 +40,14 @@
                             style="@style/CardTitle"
                             android:layout_marginLeft="0dp"
                             android:gravity="top"
-                            android:text="Recipe Name" />
+                            android:text="@string/recipe_name" />
 
                         <TextView
                             android:id="@+id/recipe_style"
                             android:layout_width="fill_parent"
                             android:layout_height="0dp"
                             android:layout_weight="2"
-                            android:text="Style name"
+                            android:text="@string/style_name"
                             android:textColor="@color/text_dark_secondary"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -74,11 +74,11 @@
 
                         <TextView
                             style="@style/RecipeStat"
-                            android:text="Batch Vol." />
+                            android:text="@string/batch_vol" />
 
                         <TextView
                             style="@style/RecipeStat"
-                            android:text="Boil Vol." />
+                            android:text="@string/boil_vol" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -92,12 +92,12 @@
                         <TextView
                             android:id="@+id/batch_volume"
                             style="@style/RecipeStatRight"
-                            android:text="5.0 gal" />
+                            android:text="@string/_5_0_gal" />
 
                         <TextView
                             android:id="@+id/boil_volume"
                             style="@style/RecipeStatRight"
-                            android:text="5.5 gal" />
+                            android:text="@string/_5_5_gal" />
                     </LinearLayout>
 
                     <View
@@ -114,11 +114,11 @@
 
                         <TextView
                             style="@style/RecipeStat"
-                            android:text="Boil Time" />
+                            android:text="@string/boil_time" />
 
                         <TextView
                             style="@style/RecipeStat"
-                            android:text="Efficiency" />
+                            android:text="@string/efficiency" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -131,12 +131,12 @@
                         <TextView
                             android:id="@+id/boil_time"
                             style="@style/RecipeStatRight"
-                            android:text="60 min" />
+                            android:text="@string/_60_min" />
 
                         <TextView
                             android:id="@+id/efficiency"
                             style="@style/RecipeStatRight"
-                            android:text="70%" />
+                            android:text="@string/_70" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -148,7 +148,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Calculated Stats"
+                        android:text="@string/calculated_stats"
                         android:textColor="@color/text_dark_primary"
                         android:textStyle="bold" />
 
@@ -157,7 +157,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/text_dark_primary"
                         android:layout_alignParentRight="true"
-                        android:text="Style"
+                        android:text="@string/style"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -178,23 +178,23 @@
 
                         <TextView
                             style="@style/RecipeStat"
-                            android:text="OG" />
+                            android:text="@string/og" />
 
                         <TextView
                             style="@style/RecipeStat"
-                            android:text="IBU" />
+                            android:text="@string/ibu" />
 
                         <TextView
                             style="@style/RecipeStat"
-                            android:text="SRM" />
+                            android:text="@string/srm" />
 
                         <TextView
                             style="@style/RecipeStat"
-                            android:text="FG" />
+                            android:text="@string/fg" />
 
                         <TextView
                             style="@style/RecipeStat"
-                            android:text="ABV" />
+                            android:text="@string/abv" />
 
                         <TextView
                             android:id="@+id/calories_label"
@@ -307,7 +307,7 @@
                         android:gravity="center"
                         android:background="@drawable/touchable"
                         android:textColor="@color/text_dark_primary"
-                        android:text="ADD" />
+                        android:text="@string/add" />
 
                 </RelativeLayout>
 
@@ -354,7 +354,7 @@
                     android:layout_height="48dp"
                     android:layout_marginLeft="5dp"
                     android:gravity="center_vertical"
-                    android:text="Notes" />
+                    android:text="@string/notes" />
 
                 <View style="@style/HorizontalSeparator" />
 

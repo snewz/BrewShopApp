@@ -16,7 +16,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_gravity="center_vertical"
-        android:contentDescription="Recipe icon"
+        android:contentDescription="@string/recipe_icon"
         android:background="@color/color_primary_light" />
 
     <LinearLayout
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:singleLine="true"
-            android:text="Recipe Name"
+            android:text="@string/recipe_name"
             android:textColor="@color/text_dark_primary"
             android:textSize="20sp" />
 
@@ -41,7 +41,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:text="Style"
+            android:text="@string/style"
             android:ellipsize="end"
             android:singleLine="true"
             android:textColor="@color/text_dark_secondary"

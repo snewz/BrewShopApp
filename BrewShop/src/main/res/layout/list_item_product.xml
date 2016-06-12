@@ -8,7 +8,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
-        android:contentDescription="Product icon"
+        android:contentDescription="@string/product_icon"
         android:layout_marginRight="5dp" />
 
     <TextView
@@ -18,7 +18,7 @@
         android:layout_toRightOf="@id/product_icon"
         android:layout_toLeftOf="@+id/product_price_layout"
         android:layout_height="wrap_content"
-        android:text="Product"
+        android:text="@string/product"
         android:textSize="14sp"
         android:textStyle="bold"/>
 
@@ -29,7 +29,7 @@
         android:layout_toRightOf="@id/product_icon"
         android:layout_toLeftOf="@+id/product_price_layout"
         android:layout_height="wrap_content"
-        android:text="Manufacturer"
+        android:text="@string/manufacturer"
         android:textSize="12sp"
         android:textStyle="italic"/>
 
@@ -40,7 +40,7 @@
         android:layout_toRightOf="@id/product_icon"
         android:layout_toLeftOf="@id/product_price_layout"
         android:layout_height="wrap_content"
-        android:text="Product description. Product description. Product description. Product description. Product description. Product description."
+        android:text="@string/product_description_dummy"
         android:textSize="12sp"
         android:scrollHorizontally="true"
         android:ellipsize="end"

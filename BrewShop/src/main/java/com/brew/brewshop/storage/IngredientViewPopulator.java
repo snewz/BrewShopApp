@@ -10,7 +10,6 @@ import com.brew.brewshop.settings.Settings;
 import com.brew.brewshop.storage.inventory.InventoryItem;
 import com.brew.brewshop.storage.recipes.Hop;
 import com.brew.brewshop.storage.recipes.HopAddition;
-import com.brew.brewshop.storage.recipes.Ingredient;
 import com.brew.brewshop.storage.recipes.Malt;
 import com.brew.brewshop.storage.recipes.MaltAddition;
 import com.brew.brewshop.storage.recipes.Recipe;
@@ -20,11 +19,13 @@ import com.brew.brewshop.util.IngredientInfo;
 import com.brew.brewshop.util.Util;
 
 public class IngredientViewPopulator {
+    private Context mContext;
     private boolean mShowInventory;
     private BrewStorage mStorage;
     private Settings mSettings;
 
     public IngredientViewPopulator(Context context) {
+        mContext = context;
         mStorage = new BrewStorage(context);
         mShowInventory = true;
         mSettings = new Settings(context);
@@ -65,7 +66,7 @@ public class IngredientViewPopulator {
         parent.findViewById(R.id.color).setVisibility(View.GONE);
 
         view = (TextView) parent.findViewById(R.id.percent);
-        view.setText(IngredientInfo.getInfo(addition, recipe));
+        view.setText(IngredientInfo.getInfo(mContext, addition, recipe));
         populateMalt(parent, addition.getMalt());
     }
 
@@ -87,7 +88,7 @@ public class IngredientViewPopulator {
         ibuView.setVisibility(View.GONE);
 
         view = (TextView) parent.findViewById(R.id.details);
-        view.setText(IngredientInfo.getInfo(addition));
+        view.setText(IngredientInfo.getInfo(mContext, addition));
         switch (addition.getUsage()) {
             case FIRST_WORT:
             case BOIL:
@@ -107,7 +108,7 @@ public class IngredientViewPopulator {
         view.setVisibility(View.GONE);
 
         view = (TextView) parent.findViewById(R.id.details);
-        view.setText(Util.fromDouble(item.getHop().getPercentAlpha(), 1, true) + "% Alpha Acid");
+        view.setText(String.format(mContext.getString(R.string.per_alpha_acid), Util.fromDouble(item.getHop().getPercentAlpha(), 1, true)));
 
         populateHops(parent, item.getHop());
     }
@@ -117,7 +118,7 @@ public class IngredientViewPopulator {
         hideInventoryView(parent);
 
         TextView view = (TextView) parent.findViewById(R.id.quantity);
-        view.setText(Util.fromDouble(item.getCount(), 1) + " Pkg.");
+        view.setText(String.format(mContext.getString(R.string.n_pkg), Util.fromDouble(item.getCount(), 1)));
     }
 
     public void populateYeastFromRecipe(View parent, Yeast yeast, int packsAccountedFor) {
@@ -131,7 +132,7 @@ public class IngredientViewPopulator {
         if (inInventory < 0) inInventory = 0;
         if (inInventory < 1) {
             view.setVisibility(View.VISIBLE);
-            view.setText("(" + Util.fromDouble(1 - inInventory, 1) + " Pkg.)");
+            view.setText(String.format("(%s %s)", Util.fromDouble(1 - inInventory, 1), mContext.getString(R.string.pkg)));
         } else {
             check.setVisibility(View.VISIBLE);
         }
@@ -191,7 +192,7 @@ public class IngredientViewPopulator {
         view.setText(yeast.getName());
 
         view = (TextView) parent.findViewById(R.id.attenuation);
-        view.setText(IngredientInfo.getInfo(yeast));
+        view.setText(IngredientInfo.getInfo(mContext, yeast));
     }
 
     private String formatWeight(Weight weight, int significance) {
