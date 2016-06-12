@@ -23,7 +23,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1 lb."
+                android:text="@string/_1_lb"
                 android:textColor="@color/text_dark_primary"
                 android:textSize="18sp" />
 
@@ -35,7 +35,7 @@
                 android:layout_marginLeft="5dp"
                 android:singleLine="true"
                 android:ellipsize="end"
-                android:text="Malt"
+                android:text="@string/malt"
                 android:textColor="@color/text_dark_primary"
                 android:textSize="18sp" />
 

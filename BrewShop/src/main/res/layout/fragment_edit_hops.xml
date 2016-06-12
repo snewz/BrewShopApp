@@ -14,13 +14,13 @@
 
         <TextView style="@style/CardTitle"
             android:id="@+id/hop_addition_title"
-            android:text="Hop Addition"/>
+            android:text="@string/hop_addition"/>
 
         <TextView
             android:id="@+id/showing_inventory_only"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Inventory Only"
+            android:text="@string/inventory_only"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:textColor="@color/text_dark_secondary"
@@ -45,7 +45,7 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Hop Type" />
+                    android:text="@string/hop_type" />
 
                 <Spinner style="@style/MySpinner"
                     android:id="@+id/hops_type"/>
@@ -59,13 +59,13 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Name" />
+                    android:text="@string/name" />
 
                 <EditText
                     android:id="@+id/custom_name"
                     style="@style/RecipeEditValue"
                     android:layout_width="fill_parent"
-                    android:hint="Hop name"
+                    android:hint="@string/hop_name"
                     android:gravity="start|bottom"
                     android:inputType="textCapWords|textNoSuggestions"
                     android:maxLength="32">
@@ -80,7 +80,7 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Weight" />
+                    android:text="@string/weight" />
 
                 <EditText style="@style/RecipeEditValue"
                     android:id="@+id/hops_weight"
@@ -103,7 +103,7 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Usage" />
+                    android:text="@string/usage" />
 
                 <Spinner style="@style/MySpinner"
                     android:id="@+id/hops_usage"/>
@@ -118,7 +118,7 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Alpha Acid" />
+                    android:text="@string/alpha_acid" />
 
                 <EditText
                     android:id="@+id/hops_alpha"
@@ -140,7 +140,7 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Boil Time" />
+                    android:text="@string/boil_time" />
 
                 <EditText
                     android:id="@+id/boil_duration"
@@ -150,7 +150,7 @@
 
                 <TextView
                     style="@style/RecipeEditUnit"
-                    android:text="min" />
+                    android:text="@string/min" />
 
             </LinearLayout>
 
@@ -162,7 +162,7 @@
 
                 <TextView
                     style="@style/RecipeEditLabel"
-                    android:text="Duration" />
+                    android:text="@string/duration" />
 
                 <EditText
                     android:id="@+id/dryhop_days"
@@ -172,7 +172,7 @@
 
                 <TextView
                     style="@style/RecipeEditUnit"
-                    android:text="days" />
+                    android:text="@string/days" />
 
             </LinearLayout>
 
@@ -185,7 +185,7 @@
         android:orientation="vertical">
 
         <TextView style="@style/CardTitle"
-            android:text="Description"/>
+            android:text="@string/description"/>
 
         <android.support.v7.widget.CardView style="@style/Card">
 
@@ -197,7 +197,7 @@
                 android:padding="5dp"
                 android:singleLine="false"
                 android:gravity="center_vertical"
-                android:text="Description"
+                android:text="@string/description"
                 android:textSize="14sp"/>
 
         </android.support.v7.widget.CardView>

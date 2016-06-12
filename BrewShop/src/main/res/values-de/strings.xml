@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">@string/brew_shop</string>
+    <string name="brew_shop">Brew Shop</string>
+    <string name="new_recipe">Neues Rezept</string>
+    <string name="open">Öffnen</string>
+    <string name="new_malt">Malz hinzufügen</string>
+    <string name="new_hops">Hopfen hinzufügen</string>
+    <string name="new_yeast">Hefe hinzufügen</string>
+    <string name="new_item">Neuer Posten</string>
+    <string name="edit_recipe">Rezept bearbeiten</string>
+    <string name="action_refresh">Aktualisieren</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_share">Teilen</string>
+    <string name="action_select_all">Alles auswählen</string>
+    <string name="drawer_open">Schublade öffnen</string>
+    <string name="drawer_close">Schublade schließen</string>
+    <string name="retrieve_error">Produktliste kann nicht abgerufen werden.</string>
+    <string name="no_products">Keine Produkte verfügbar.</string>
+    <string name="select_recipes">Rezept auswählen</string>
+    <string name="select_ingredients">Zutaten auswählen</string>
+    <string name="selected">ausgewählt</string>
+    <string name="no_recipes">Keine Rezepte vorhanden</string>
+    <string name="deleted_recipes">%d Rezepte gelöscht</string>
+    <string name="deleted_recipe">Rezept gelöscht</string>
+    <string name="deleted_ingredients">%d Zutaten gelöscht</string>
+    <string name="deleted_ingredient">Zutat gelöscht</string>
+    <string name="deleted_items">%d Posten gelöscht</string>
+    <string name="deleted_item">Posten gelöscht</string>
+    <string name="max_recipes_reached">Anzahl der Rezepte ist begrenzt auf %d</string>
+    <string name="ingredients">Zutaten</string>
+    <string name="add_ingredient">Zutat hinzufügen</string>
+    <string name="max_ingredients_reached">Rezepte haben ein Limit von %d Zutaten</string>
+    <string name="max_inventory_reached">Der Lagerbestand hat ein Limit von %d Posten</string>
+    <string name="no_ingredients">Keine Zutaten</string>
+    <string name="unnamed_recipe">Unbenanntes Rezept</string>
+    <string name="add_recipe_notes">Rezeptnotiz hinzufügen&#8230;</string>
+    <string name="delete_selected_recipes">%d Rezepte löschen?</string>
+    <string name="delete_selected_ingredients">%d Zutaten löschen?</string>
+    <string name="delete_selected_items">%d Posten löschen?</string>
+    <string name="delete_selected_recipe">Rezept löschen?</string>
+    <string name="delete_selected_ingredient">Zutat löschen?</string>
+    <string name="delete_selected_item">Posten löschen?</string>
+    <string name="no_description">Keine Beschreibung verfügbar</string>
+    <string name="yes">JA</string>
+    <string name="no">NEIN</string>
+    <string name="add_yeast">Hefe hinzufügen</string>
+    <string name="none_available">Nichts verfügbar</string>
+    <string name="varies">Varianten</string>
+    <string name="bjcp_category">BJCP-Kategorie</string>
+    <string name="select_style">Sorte auswählen&#8230;</string>
+    <string name="no_style_selected">Keine Sorte ausgewählt</string>
+    <string name="select_a_recipe">Wähle ein Rezept</string>
+    <string name="select_an_item">Wähle einen Posten</string>
+    <string name="my_inventory">Mein Lagerbestand</string>
+    <string name="custom_malt">Selbstdefiniertes Malz</string>
+    <string name="custom_hop">Selbstdefinierter Hopfen</string>
+    <string name="custom_yeast">Selbstdefinierte Hefe</string>
+    <string name="add_item">Posten hinzufügen</string>
+    <string name="select_items">Posten auswählen</string>
+    <string name="inventory_empty">Lagerbestand ist leer</string>
+    <string name="inventory_malt">Lagerbestand Malz</string>
+    <string name="inventory_hop">Lagerbestand Hopfen</string>
+    <string name="inventory_yeast">Lagerbestand Hefe</string>
+    <string name="show_inventory">Lagerbestand anzeigen</string>
+    <string name="hide_inventory">Lagerbestand verbergen</string>
+    <string name="remove_from_inventory">Von Lagerbestand entfernen&#8230;</string>
+    <string name="confirm_remove_from_inventory">Diese Zutaten vom Lagerbestand entfernen?</string>
+    <string name="inventory_updated">Lagerbestand aktualisieren</string>
+    <string name="inventory_only">Nur Lagerbestand</string>
+    <string name="show_all">Alle Sorten anzeigen</string>
+    <string name="malt_type">Malzsorten</string>
+    <string name="settings">Einstellungen</string>
+    <string name="save_as_pdf">Als PDF speichern</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="enter_pdf_file_name">Dateiname für PDF eingeben</string>
+    <string name="notes">Notizen</string>
+
+    <!-- Navigation -->
+    <string name="homebrew_tools">Heimbrauwerkzeuge</string>
+    <string name="my_recipes">Meine Rezepte</string>
+    <string name="homebrew_shop">Shop Lagerbestand</string>
+    <string name="beer">Bier</string>
+    <string name="wine">Wein</string>
+    <string name="coffee">Kaffee</string>
+    <string name="homebrew_supplies">Heimbrauvorrat</string>
+
+    <!-- Recipe Fragment Titles -->
+    <string name="edit_recipe_stats">Rezeptgrunddaten bearbeiten</string>
+    <string name="edit_recipe_notes">Notizen bearbeiten</string>
+    <string name="edit_malt_addition">Malz bearbeiten</string>
+    <string name="edit_hop_addition">Hopfen bearbeiten</string>
+    <string name="edit_yeast_addition">Hefe bearbeiten</string>
+
+    <!-- Ingredient Types -->
+    <string name="malt">Malz</string>
+    <string name="hops">Hopfen</string>
+    <string name="yeast">Hefe</string>
+    <string-array name="ingredient_types">
+        <item>@string/malt</item>
+        <item>@string/hops</item>
+        <item>@string/yeast</item>
+    </string-array>
+
+    <string-array name="new_recipe_types">
+        <item>@string/new_recipe</item>
+        <item>@string/open</item>
+    </string-array>
+
+    <string name="first_wort">Vorderwürze</string>
+    <string name="boil">Kochbeginn</string>
+    <string name="whirlpool">Whirlpool</string>
+    <string name="dry_hop">Hopfenstopfen</string>
+    <string-array name="hops_usage">
+        <item>@string/first_wort</item>
+        <item>@string/boil</item>
+        <item>@string/whirlpool</item>
+        <item>@string/dry_hop</item>
+    </string-array>
+
+    <string name="imperial">Imperial</string>
+    <string name="metric">Metrisch</string>
+    <string-array name="units">
+        <item>@string/imperial</item>
+        <item>@string/metric</item>
+    </string-array>
+
+    <string name="specific_gravity">Spezifische Dichte</string>
+    <string name="degrees_plato">° Plato</string>
+    <string-array name="extract_scales">
+        <item>@string/degrees_plato</item>
+        <item>@string/specific_gravity</item>
+    </string-array>
+
+    <string name="brew_shop_recipe_colon">Brew Shop Rezept: </string>
+    <string name="brew_shop_recipe">Brew Shop Rezept</string>
+    <string name="brew_shop_recipes">Brew Shop: geteilte Rezepte</string>
+    <string name="share_via">Teile per&#8230;</string>
+
+    <string name="no_recipe_type">Keine valide Rezeptdatei.</string>
+    <string name="open_recipe">Rezepte öffnen</string>
+    <string name="opened_recipe">Geöffnete Rezepte</string>
+    <string name="opened_recipes">%d geöffnete Rezepte</string>
+    <string name="saved_recipes">%d Rezepte gespeichert</string>
+    <string name="saved_recipe">Rezept gespeichert</string>
+    <string name="cannot_write_file">Schreiben in die Datei %s fehlgeschlagen</string>
+    <string name="open_recipe_progress">Öffne Rezept&#8230;</string>
+    <string name="save_recipe_progress">Speichere Rezept&#8230;</string>
+    <string name="open_recipes_progress">Öffne Rezept %1$s von %2$s&#8230;</string>
+    <string name="save_recipes_progress">Speichere Rezept %1$s von %2$s&#8230;</string>
+    <string name="imperial_calories">12oz. kCal</string>
+    <string name="metric_calories">330ml kCal</string>
+    <string name="gallon_abbrev">gal</string>
+    <string name="litres">Liter</string>
+    <string name="grams">Gramm</string>
+    <string name="oz">oz</string>
+    <string name="kg">kg</string>
+    <string name="lb">lb</string>
+    <string name="recipe_name">Rezeptname</string>
+    <string name="style_name">Sortenname</string>
+    <string name="batch_vol">Ansatzvol.</string>
+    <string name="boil_vol">Kochvol.</string>
+    <string name="_5_0_gal">5.0 gal</string>
+    <string name="boil_time">Kochzeit</string>
+    <string name="efficiency">Ausbeute</string>
+    <string name="_60_min">60 min</string>
+    <string name="_70">70%</string>
+    <string name="ibu">IBU</string>
+    <string name="style">Sorte</string>
+    <string name="_5_5_gal">5.5 gal</string>
+    <string name="abv">ABV</string>
+    <string name="add">HINZUFÜGEN</string>
+    <string name="fg">FG</string>
+    <string name="mash">Maischen</string>
+    <string name="calculated_stats">Berechnete Werte</string>
+    <string name="srm">SRM</string>
+    <string name="recipe_icon">Rezeptsymbol</string>
+    <string name="og">OG</string>
+    <string name="alpha_acid">Alphasäure</string>
+    <string name="days">Tage</string>
+    <string name="description">Beschreibung</string>
+    <string name="duration">Dauer</string>
+    <string name="hop_addition">Hopfengabe</string>
+    <string name="hop_name">Hopfenname</string>
+    <string name="hop_type">Hopfensorte</string>
+    <string name="min">min</string>
+    <string name="name">Name</string>
+    <string name="usage">Nutzung</string>
+    <string name="weight">Gewicht</string>
+    <string name="volume">Volumen</string>
+    <string name="time">Zeit</string>
+    <string name="substyle">Untersorte</string>
+    <string name="style_guidelines">Sortenleitfaden</string>
+    <string name="recipe_information">Rezeptinformationen</string>
+    <string name="percent">Prozent</string>
+    <string name="lb_gal">/lb/gal</string>
+    <string name="malt_addition">Malzzugabe</string>
+    <string name="malt_name">Malzname</string>
+    <string name="mashed">geschrotet</string>
+    <string name="enter_name">Name eingeben</string>
+    <string name="color">Farbe</string>
+    <string name="boil_volume">Kochvolumen</string>
+    <string name="bjcp_style">BJCP-Sorte</string>
+    <string name="batch_volume">Ansatzvolumen</string>
+    <string name="yeast_type">Hefeart</string>
+    <string name="yeast_name">Hefename</string>
+    <string name="_10_ibu">10 IBU</string>
+    <string name="_1_lb">1 lb.</string>
+    <string name="_1_pkg">1 Pck.</string>
+    <string name="_2_oz">2 oz.</string>
+    <string name="_4_2_alpha">4,2% Alpha</string>
+    <string name="_80_attenuation">~80% Umsatzgrad</string>
+    <string name="app_settings">Einstellungen</string>
+    <string name="beer_style">Biersorte</string>
+    <string name="extract_scale">Extrakteinheit</string>
+    <string name="icon">Symbol</string>
+    <string name="manufacturer">Hersteller</string>
+    <string name="measurement">Maßeinheiten</string>
+    <string name="product">Produkt</string>
+    <string name="product_description_dummy">Produktbeschreibung. Produktbeschreibung. Produktbeschreibung. Produktbeschreibung. Produktbeschreibung. Produktbeschreibung.</string>
+    <string name="product_icon">Produktsymbol</string>
+    <string name="gravity">Dichte</string>
+    <string name="section">Sektion</string>
+    <string name="quantity">Anzahl</string>
+    <string name="the_brew_shop">The Brew Shop</string>
+    <string name="textview">Textanzeige</string>
+    <string name="packs">Päckchen</string>
+    <string name="attenuation">Umsatzgrad</string>
+    <string name="navigation_icon">Navigationssymbol</string>
+    <string name="x_pkg">(X Pck.)</string>
+    <string name="x_x_oz">(X,X oz.)</string>
+    <string name="dry_hop_n_days">Hopfenstopfen für %d Tage</string>
+    <string name="minute_to_add">Hinzufügen bei %d Minuten</string>
+    <string name="n_pkg">%s Pck.</string>
+    <string name="pkg">Pck.</string>
+    <string name="per_alpha_acid">%s%% Alphasäure</string>
+    <string name="perc_attenuation">% Umsatzgrad</string>
+    <string name="perc_of_grist">% vom Schrot</string>
+    <string name="first_wort_hop">Vorderwürzehopfung</string>
+</resources>

@@ -91,8 +91,10 @@ public class HopsFragment extends Fragment implements AdapterView.OnItemSelected
             mInventoryItem = state.getParcelable(INVENTORY_ITEM);
         }
 
+        /*ArrayAdapter<HopUsage> usageAdapter = new ArrayAdapter<HopUsage>(getActivity(),
+                R.layout.spinner_item, HopUsage.values()) ; */
         ArrayAdapter<CharSequence> usageAdapter = ArrayAdapter.createFromResource(
-                getActivity(), R.array.hops_usage, R.layout.spinner_item);
+                getActivity(), HopUsage.RESOURCE_ARRAY, R.layout.spinner_item);
         usageAdapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         mHopUsageSpinner.setAdapter(usageAdapter);
         mHopUsageSpinner.setOnItemSelectedListener(this);
@@ -268,8 +270,8 @@ public class HopsFragment extends Fragment implements AdapterView.OnItemSelected
             HopAddition addition = getHopAddition();
             addition.setHop(getHopData());
             addition.setWeight(getWeightData());
-            CharSequence usage = (CharSequence) mHopUsageSpinner.getSelectedItem();
-            addition.setUsage(HopUsage.fromString(usage.toString()));
+            HopUsage usage = HopUsage.values()[mHopUsageSpinner.getSelectedItemPosition()];
+            addition.setUsage(usage);
             addition.setBoilTime(Util.toInt(mTimeEdit.getText()));
             addition.setDryHopDays(Util.toInt(mDryHopDaysEdit.getText()));
         } else if (mInventoryItem != null) {
@@ -342,9 +344,9 @@ public class HopsFragment extends Fragment implements AdapterView.OnItemSelected
     }
 
     private void onHopsUsageSelected() {
-        String usage = mHopUsageSpinner.getSelectedItem().toString();
+        HopUsage usage = HopUsage.values()[mHopUsageSpinner.getSelectedItemPosition()];
         if (!usage.equals(getHopAddition().getUsage())) {
-            getHopAddition().setUsage(HopUsage.fromString(usage));
+            getHopAddition().setUsage(usage);
             setHopUsageView();
         }
     }

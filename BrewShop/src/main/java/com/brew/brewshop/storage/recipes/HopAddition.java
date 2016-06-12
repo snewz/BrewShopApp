@@ -7,7 +7,7 @@ public class HopAddition implements Parcelable {
     private int minutes;
     private Hop hop;
     private Weight weight;
-    private String usage;
+    private HopUsage usage;
     private int dryhop_days;
 
     public HopAddition() {
@@ -15,14 +15,14 @@ public class HopAddition implements Parcelable {
         hop = new Hop();
         minutes = 60;
         dryhop_days = 5;
-        usage = HopUsage.BOIL.getText();
+        usage = HopUsage.BOIL;
     }
 
     public HopAddition(Parcel parcel) {
         minutes = parcel.readInt();
         hop = parcel.readParcelable(Hop.class.getClassLoader());
         weight = parcel.readParcelable(Weight.class.getClassLoader());
-        usage = parcel.readString();
+        usage = HopUsage.fromString(parcel.readString());
     }
 
     public Hop getHop() { return hop; }
@@ -37,8 +37,8 @@ public class HopAddition implements Parcelable {
     public int getDryHopDays() { return dryhop_days; }
     public void setDryHopDays(int value) { dryhop_days = value; }
 
-    public HopUsage getUsage() { return HopUsage.fromString(usage); }
-    public void setUsage(HopUsage value) { usage = value.getText(); }
+    public HopUsage getUsage() { return usage; }
+    public void setUsage(HopUsage value) { usage = value; }
 
     public static final Parcelable.Creator<HopAddition> CREATOR = new Parcelable.Creator<HopAddition>() {
         public HopAddition createFromParcel(Parcel in) {
@@ -65,7 +65,7 @@ public class HopAddition implements Parcelable {
         parcel.writeInt(minutes);
         parcel.writeParcelable(hop, 0);
         parcel.writeParcelable(weight, 0);
-        parcel.writeString(usage);
+        parcel.writeString(usage.getText());
     }
 
 

@@ -211,7 +211,7 @@ public class PdfRecipeWriter {
         namePara.add(new Phrase(formatWeight(malt.getWeight(), 2) + " ", NORMAL_FONT));
         namePara.add(new Phrase(malt.getMalt().getName() + "\n", NORMAL_FONT));
         namePara.add(new Phrase("\n", new Font(Font.FontFamily.TIMES_ROMAN, 2)));
-        namePara.add(new Phrase(IngredientInfo.getInfo(malt, mRecipe), SMALL_FONT));
+        namePara.add(new Phrase(IngredientInfo.getInfo(mContext, malt, mRecipe), SMALL_FONT));
 
         PdfPTable table = new PdfPTable(new float[] {40, 400});
         table.setHorizontalAlignment(Element.ALIGN_LEFT);
@@ -233,7 +233,7 @@ public class PdfRecipeWriter {
         namePara.add(new Phrase(formatWeight(hop.getWeight(), 3) + " ", NORMAL_FONT));
         namePara.add(new Phrase(hop.getHop().getName() + "\n", NORMAL_FONT));
         namePara.add(new Phrase("\n", new Font(Font.FontFamily.TIMES_ROMAN, 2)));
-        namePara.add(new Phrase(IngredientInfo.getInfo(hop), SMALL_FONT));
+        namePara.add(new Phrase(IngredientInfo.getInfo(mContext, hop), SMALL_FONT));
 
         PdfPTable table = new PdfPTable(new float[] {40, 400});
         table.setHorizontalAlignment(Element.ALIGN_LEFT);
@@ -254,7 +254,7 @@ public class PdfRecipeWriter {
         namePara.setSpacingBefore(0);
         namePara.add(new Phrase("1 Pkg. " + yeast.getName() + "\n", NORMAL_FONT));
         namePara.add(new Phrase("\n", new Font(Font.FontFamily.TIMES_ROMAN, 2)));
-        namePara.add(new Phrase(IngredientInfo.getInfo(yeast), SMALL_FONT));
+        namePara.add(new Phrase(IngredientInfo.getInfo(mContext, yeast), SMALL_FONT));
 
         PdfPTable table = new PdfPTable(new float[] {40, 400});
         table.setHorizontalAlignment(Element.ALIGN_LEFT);

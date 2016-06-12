@@ -1,6 +1,9 @@
 package com.brew.brewshop.storage.recipes;
 
+import com.brew.brewshop.R;
+
 public enum HopUsage {
+    // keep synchronized with: R.array.hops_usage!
     FIRST_WORT("First Wort"),
     BOIL("Boil"),
     WHIRLPOOL("Whirlpool"),
@@ -8,6 +11,8 @@ public enum HopUsage {
     MASH("Mash");
 
     private String mText;
+
+    public final static int RESOURCE_ARRAY = R.array.hops_usage;
 
     HopUsage(String value) {
         mText = value;
